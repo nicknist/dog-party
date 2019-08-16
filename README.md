@@ -13,3 +13,6 @@ Here's the comp that we went off of:
 
 Here's what the screen shot looks like:
 ![alt text](images/screenShot.png "Dog Party Screen Shot")
+
+Here's what the mobile screen shot looks like: 
+![alt text](images/screenShotMobile.png "Dog Party Mobile Screen Shot")
