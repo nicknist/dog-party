@@ -8,8 +8,8 @@ submit.addEventListener('click', function() {
 })
 
 var howButton = document.querySelector('#howButton');
-var factsButton = document.querySelector('#factsButton');
 var whatButton = document.querySelector('#whatButton');
+var factsButton = document.querySelector('#factsButton');
 var article1 = document.querySelector('#article1');
 var article2 = document.querySelector('#article2');
 var article3 = document.querySelector('#article3');
@@ -22,7 +22,7 @@ howButton.addEventListener('click', function() {
   }
 })
 
-factsButton.addEventListener('click', function() {
+whatButton.addEventListener('click', function() {
   if (window.getComputedStyle(article2).visibility === "hidden") {
     article2.classList.remove('disappear');
   } else {
@@ -30,7 +30,7 @@ factsButton.addEventListener('click', function() {
   }
 })
 
-whatButton.addEventListener('click', function() {
+factsButton.addEventListener('click', function() {
   if (window.getComputedStyle(article3).visibility === "hidden") {
     article3.classList.remove('disappear');
   } else {

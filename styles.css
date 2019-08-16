@@ -35,21 +35,23 @@
   border-bottom-width: 0px;
 }
 
-#section3 {
-  border-style: solid;
-  border-left-width: 2px;
-  border-right-width: 2px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-}
-
 article {
   float: left;
   margin: 0px;
   align-content: center;
+  text-align: center;
   width: 30% auto;
   padding: 20px;
   margin-right: 10px;
+}
+
+.text {
+  width: 100%;
+  height: 200px;
+}
+
+.update {
+  font-weight: bolder;
 }
 
 h1{
@@ -111,10 +113,11 @@ header {
 .word {
   color: #ffffff;
   font-size: 18px;
+  text-align: center;
   background-color: #048eaa;
-  padding: 10px 120px;
-  width: 30%;
-  margin: 20px;
+  padding: 15px 150px;
+  margin: 10px;
+  margin-bottom: 20px;
 }
 
 .buttons {
@@ -161,9 +164,16 @@ label {
   visibility: hidden;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1020px) {
   #section2 {
     column-count: 1;
+  }
+  .word {
+    display: block;
+    margin: auto;
+  }
+  #factsButton {
+    margin-bottom: 40px;
   }
 }
 
@@ -171,5 +181,12 @@ label {
   h4 {
     font-size: 50%;
     margin: 20px 10px;
+  }
+  article {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #article2 {
+    margin-bottom: 100px;
   }
 }
