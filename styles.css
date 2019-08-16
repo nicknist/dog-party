@@ -35,6 +35,14 @@
   border-bottom-width: 0px;
 }
 
+#section3 {
+  border-style: solid;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
 article {
   float: left;
   margin: 0px;
@@ -94,15 +102,23 @@ header {
 }
 
 #headerIcon {
-  position: relative;
   float: left;
+  margin: 10px;
+  width: 5%;
+  height: 5%;
 }
 
 .word {
   color: #ffffff;
+  font-size: 18px;
   background-color: #048eaa;
-  padding: 10px;
-  margin: 30px;
+  padding: 10px 120px;
+  width: 30%;
+  margin: 20px;
+}
+
+.buttons {
+  text-align: center;
 }
 
 footer {
@@ -139,6 +155,10 @@ label {
   color: #ffffff;
   position: relative;
   right: 130px;
+}
+
+.disappear {
+  visibility: hidden;
 }
 
 @media (max-width: 950px) {

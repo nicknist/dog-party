@@ -7,12 +7,33 @@ submit.addEventListener('click', function() {
   someDogs.innerText = change;
 })
 
-// var box = document.querySelector('.box');
-// var colorInput = document.getElementById('color');
-// var changeColorButton = document.querySelector('.change-color');
-//
-//
-// changeColorButton.addEventListener('click', function () {
-//   var color = colorInput.value;
-//   box.style.backgroundColor = color;
-// });
+var howButton = document.querySelector('#howButton');
+var factsButton = document.querySelector('#factsButton');
+var whatButton = document.querySelector('#whatButton');
+var article1 = document.querySelector('#article1');
+var article2 = document.querySelector('#article2');
+var article3 = document.querySelector('#article3');
+
+howButton.addEventListener('click', function() {
+  if (window.getComputedStyle(article1).visibility === "hidden") {
+    article1.classList.remove('disappear');
+  } else {
+    article1.classList.add('disappear');
+  }
+})
+
+factsButton.addEventListener('click', function() {
+  if (window.getComputedStyle(article2).visibility === "hidden") {
+    article2.classList.remove('disappear');
+  } else {
+    article2.classList.add('disappear');
+  }
+})
+
+whatButton.addEventListener('click', function() {
+  if (window.getComputedStyle(article3).visibility === "hidden") {
+    article3.classList.remove('disappear');
+  } else {
+    article3.classList.add('disappear');
+  }
+})
