@@ -14,26 +14,18 @@ var article1 = document.querySelector('#article1');
 var article2 = document.querySelector('#article2');
 var article3 = document.querySelector('#article3');
 
-howButton.addEventListener('click', function() {
-  if (window.getComputedStyle(article1).visibility === "hidden") {
-    article1.classList.remove('disappear');
-  } else {
-    article1.classList.add('disappear');
-  }
-})
+function disappearSection(button, article) {
+  button.addEventListener('click', function() {
+    if (window.getComputedStyle(article).visibility === "hidden") {
+      article.classList.remove('disappear');
+    } else {
+      article.classList.add('disappear');
+    }
+  })
+}
 
-whatButton.addEventListener('click', function() {
-  if (window.getComputedStyle(article2).visibility === "hidden") {
-    article2.classList.remove('disappear');
-  } else {
-    article2.classList.add('disappear');
-  }
-})
+disappearSection(howButton, article1);
 
-factsButton.addEventListener('click', function() {
-  if (window.getComputedStyle(article3).visibility === "hidden") {
-    article3.classList.remove('disappear');
-  } else {
-    article3.classList.add('disappear');
-  }
-})
+disappearSection(whatButton, article2);
+
+disappearSection(factsButton, article3);
